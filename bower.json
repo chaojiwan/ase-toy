@@ -1,0 +1,21 @@
+{
+  "name": "ase-toy",
+  "homepage": "https://github.com/chaojiwan/ase-toy",
+  "authors": [
+    "Jin Liang <jin.liang2040@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "react": "^15.3.2"
+  }
+}
