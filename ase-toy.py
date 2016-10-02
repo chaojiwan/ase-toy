@@ -1,8 +1,12 @@
 from flask import Flask
 from flask import render_template
+from models import db
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/toyflask'
+db.init_app(app)
 
 
 @app.route('/')
