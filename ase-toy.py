@@ -62,6 +62,12 @@ def login():
         return render_template('login.html', form=form)
 
 
+@app.route("/logout")
+def logout():
+    session.pop('email', None)
+    return redirect(url_for('index'))
+
+
 @app.route("/home", methods=["GET", "POST"])
 def home():
     return render_template("home.html")

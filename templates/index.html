@@ -5,7 +5,8 @@
     <div class="container">
         <div id="content"></div>
 
-        <a href="#" class="btn btn-primary btn-lg">Sign up</a>
+        <a href="{{ url_for('signup') }}" class="btn btn-primary btn-lg">Sign up</a>
+        <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg">Log in</a>
         <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg">About us</a>
     </div>
 
