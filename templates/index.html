@@ -1,19 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8"/>
-    <title>Hello React!</title>
+{% extends "layout.html" %}
 
-</head>
-<body>
-<div class="container">
-    <div id="content"></div>
-</div>
+{% block content %}
 
+    <div class="container">
+        <div id="content"></div>
 
-<script src="{{ url_for('static', filename='bower_components/react/react.min.js') }}"></script>
-<script src="{{ url_for('static', filename='bower_components/react/react-dom.min.js') }}"></script>
-<script type="text/babel" src="{{ url_for('static', filename='scripts/js/main.js') }}"></script>
-<script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
-</body>
-</html>
+        <a href="#" class="btn btn-primary btn-lg">Sign up</a>
+        <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg">About us</a>
+    </div>
+
+{% endblock %}

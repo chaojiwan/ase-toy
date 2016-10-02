@@ -3,6 +3,6 @@
  */
 
 ReactDOM.render(
-    <h1>Hello, world!</h1>,
+    <h1>Hello Wisconsin!</h1>,
     document.getElementById('content')
 );
