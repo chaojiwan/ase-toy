@@ -26,6 +26,19 @@ $ npm install
 $ bower install
 ```
 
+
+##
+testing
+required module pythest
+```bash
+$ pip install -U pytest
+```
+run test
+```bash
+$ pytest test.py
+```
+
+
 ##
 The app has five pages like 
 ```bash
