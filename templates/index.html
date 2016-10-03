@@ -2,12 +2,17 @@
 
 {% block content %}
 
-    <div class="container">
-        <div id="content"></div>
+    <div class="video-section">
+        <video autoplay muted loop>
+            <source src="https://s3.amazonaws.com/codecademy-content/projects/excursion/bg.mp4" type="video/mp4">
+        </video>
+        <div class="section-content container">
+            <div id="content"></div>
 
-        <a href="{{ url_for('signup') }}" class="btn btn-primary btn-lg">Sign up</a>
-        <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg">Log in</a>
-        <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg">About us</a>
+            <a href="{{ url_for('signup') }}" class="btn">Sign up</a>
+            <a href="{{ url_for('login') }}" class="btn">Log in</a>
+            <a href="{{ url_for('about') }}" class="btn">About us</a>
+        </div>
     </div>
 
 {% endblock %}

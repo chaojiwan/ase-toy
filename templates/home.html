@@ -4,7 +4,11 @@
     <main class="hero-section">
         <div class="container">
 
-            <h1>Home</h1>
+            {% if firstname %}
+                <h1>{{ firstname }}, Sweet Home Alabama</h1>
+            {% else %}
+                <h1>Home</h1>
+            {% endif %}
             <a href="{{ url_for('logout') }}" class="btn btn-primary btn-lg">Log out</a>
 
         </div>
