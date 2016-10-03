@@ -3,6 +3,16 @@
 live on https://ase-toy.herokuapp.com/
 
 ##
+tech stack
+```bash
+Python
+Flask
+PostgreSQL
+Bootstrap
+React
+```
+
+##
 running
 ```bash
 $ git clone https://github.com/chaojiwan/ase-toy.git
